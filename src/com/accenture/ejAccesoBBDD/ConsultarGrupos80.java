@@ -4,8 +4,16 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class ConsultarGrupos80 {
 	
+	/**
+	 * metodo encargado de realizar la consulta a la base de datos
+	 * filtrando los grupos creados en la decada de los 80 ordenados
+	 * por la fecha de creacion
+	 */
 	public static void consultarGrupos80() {
 		Connection conexion = DBUtilidades.abrirConexionBD();	
 		String query = "SELECT nombre,origen,creacion,genero FROM grupos WHERE creacion BETWEEN 1980 AND 1989 ORDER BY creacion";

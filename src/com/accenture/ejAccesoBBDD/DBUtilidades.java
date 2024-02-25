@@ -3,9 +3,16 @@ package com.accenture.ejAccesoBBDD;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class DBUtilidades {
 	private static Connection conexionDB;
 
+	/**
+	 * metodo encargado de gestionar la conexion con la base de datos
+	 * @return la conexion con la base de datos
+	 */
 	public static Connection abrirConexionBD() {
 		if (conexionDB == null) {
 			try {
@@ -19,6 +26,9 @@ public class DBUtilidades {
 		return conexionDB;
 	}
 
+	/**
+	 * metodo encargado de cerrar la conexion con la base de datos
+	 */
 	public static void cerrarConexionBD() {
 		try {
 			conexionDB.close();

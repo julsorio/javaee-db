@@ -3,8 +3,14 @@ package com.accenture.ejAccesoBBDD;
 import java.sql.Connection;
 import java.sql.Statement;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class InsertarGrupos {
 	
+	/**
+	 * metodo encargado de insertar un registro en la tabla grupos
+	 */
 	public static void insertarGrupo() {
 		Connection conexion = DBUtilidades.abrirConexionBD();
 		String query = "INSERT INTO grupos (nombre, creacion, origen, genero, discograficaIdActual) VALUES ('Kiss',1973,'Estados Unidos','Rock',2)";

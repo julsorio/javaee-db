@@ -3,8 +3,14 @@ package com.accenture.ejAccesoBBDD;
 import java.sql.Connection;
 import java.sql.Statement;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class EliminarGrupos {
 	
+	/**
+	 * metodo encargado de eliminar un grupo de la base de datos
+	 */
 	public static void eliminarGrupo() {
 		Connection conexion = DBUtilidades.abrirConexionBD();
 		String query = "DELETE FROM grupos WHERE grupoId=32 AND genero='Hard Rock' AND nombre='Kiss' AND creacion=1973 AND origen='Estados Unidos' AND discograficaIdActual=2";

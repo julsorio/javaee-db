@@ -1,5 +1,10 @@
 package com.accenture.ejAccesoBBDD;
 
+/**
+ * clase que representa la tabla grupo
+ * 
+ * @author Andrea Ravagli
+ */
 public class Grupo {
 	private String nombre;
 	private String origen;

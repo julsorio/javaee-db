@@ -4,8 +4,15 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class ConsultarGrupos {
 	
+	/**
+	 * metodo encargado de realizar la consulta a la bd
+	 * para mostrar el listado de grupos
+	 */
 	public static void listarGrupos() {
 		Connection conexion = DBUtilidades.abrirConexionBD();
 		String query = "SELECT nombre,origen,creacion,genero FROM grupos";

@@ -3,8 +3,14 @@ package com.accenture.ejAccesoBBDD;
 import java.sql.Connection;
 import java.sql.Statement;
 
+/**
+ * @author Andrea Ravagli
+ */
 public class ModificarGrupos {
 	
+	/**
+	 * metodo encargado de modificar un registro en la tabla grupo
+	 */
 	public static void modificarGrupo() {
 		Connection conexion = DBUtilidades.abrirConexionBD();
 		String query = "UPDATE grupos SET genero='Hard Rock' WHERE nombre='Kiss' AND creacion=1973 AND origen='Estados Unidos' AND discograficaIdActual=2";
